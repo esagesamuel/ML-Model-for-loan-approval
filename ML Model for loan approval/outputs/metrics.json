@@ -1,0 +1,151 @@
+{
+  "data_path": "C:\\Users\\Dell_User\\Documents\\flatiron\\module-4\\First Summative Lab\\financial_loan_data.csv",
+  "row_count": 20000,
+  "feature_count_after_leakage_removal": 30,
+  "target_distribution": {
+    "0": 0.761,
+    "1": 0.239
+  },
+  "dropped_leakage_columns": [
+    "LoanApproved",
+    "RiskScore",
+    "BaseInterestRate",
+    "InterestRate",
+    "MonthlyLoanPayment"
+  ],
+  "models": {
+    "Logistic Regression": {
+      "accuracy": 0.9155,
+      "precision": 0.7654639175257731,
+      "recall": 0.9320083682008368,
+      "f1": 0.840566037735849,
+      "roc_auc": 0.9788008098790953,
+      "confusion_matrix": [
+        [
+          2771,
+          273
+        ],
+        [
+          65,
+          891
+        ]
+      ],
+      "classification_report": {
+        "0": {
+          "precision": 0.9770803949224259,
+          "recall": 0.9103153745072273,
+          "f1-score": 0.9425170068027211,
+          "support": 3044.0
+        },
+        "1": {
+          "precision": 0.7654639175257731,
+          "recall": 0.9320083682008368,
+          "f1-score": 0.840566037735849,
+          "support": 956.0
+        },
+        "accuracy": 0.9155,
+        "macro avg": {
+          "precision": 0.8712721562240995,
+          "recall": 0.921161871354032,
+          "f1-score": 0.8915415222692851,
+          "support": 4000.0
+        },
+        "weighted avg": {
+          "precision": 0.9265040568246259,
+          "recall": 0.9155,
+          "f1-score": 0.9181507251957387,
+          "support": 4000.0
+        }
+      }
+    },
+    "Random Forest": {
+      "accuracy": 0.91025,
+      "precision": 0.7889641819941917,
+      "recall": 0.852510460251046,
+      "f1": 0.8195072900955254,
+      "roc_auc": 0.9662911193705706,
+      "confusion_matrix": [
+        [
+          2826,
+          218
+        ],
+        [
+          141,
+          815
+        ]
+      ],
+      "classification_report": {
+        "0": {
+          "precision": 0.9524772497472194,
+          "recall": 0.9283837056504599,
+          "f1-score": 0.9402761603726502,
+          "support": 3044.0
+        },
+        "1": {
+          "precision": 0.7889641819941917,
+          "recall": 0.852510460251046,
+          "f1-score": 0.8195072900955254,
+          "support": 956.0
+        },
+        "accuracy": 0.91025,
+        "macro avg": {
+          "precision": 0.8707207158707055,
+          "recall": 0.8904470829507529,
+          "f1-score": 0.8798917252340878,
+          "support": 4000.0
+        },
+        "weighted avg": {
+          "precision": 0.9133976265542458,
+          "recall": 0.91025,
+          "f1-score": 0.9114124003764172,
+          "support": 4000.0
+        }
+      }
+    },
+    "Gradient Boosting": {
+      "accuracy": 0.918,
+      "precision": 0.7788632326820604,
+      "recall": 0.9173640167364017,
+      "f1": 0.8424591738712777,
+      "roc_auc": 0.9757214961595345,
+      "confusion_matrix": [
+        [
+          2795,
+          249
+        ],
+        [
+          79,
+          877
+        ]
+      ],
+      "classification_report": {
+        "0": {
+          "precision": 0.9725121781489213,
+          "recall": 0.9181997371879106,
+          "f1-score": 0.9445758702264279,
+          "support": 3044.0
+        },
+        "1": {
+          "precision": 0.7788632326820604,
+          "recall": 0.9173640167364017,
+          "f1-score": 0.8424591738712777,
+          "support": 956.0
+        },
+        "accuracy": 0.918,
+        "macro avg": {
+          "precision": 0.8756877054154908,
+          "recall": 0.9177818769621562,
+          "f1-score": 0.8935175220488527,
+          "support": 4000.0
+        },
+        "weighted avg": {
+          "precision": 0.9262300801823415,
+          "recall": 0.918,
+          "f1-score": 0.9201699797975471,
+          "support": 4000.0
+        }
+      }
+    }
+  },
+  "best_model": "Logistic Regression"
+}
